@@ -1,4 +1,7 @@
 mongo_data/
 datos.json
 urls.json
-
+datos_pre.json
+docker-compose.yml
+.vscode/
+insert.mongodb
