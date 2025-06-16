@@ -5,3 +5,4 @@ datos_pre.json
 docker-compose.yml
 .vscode/
 insert.mongodb
+query.mongodb
