@@ -1,2 +1,114 @@
 use('editorial')
 
+//db.libros.findOne()
+// limpieza de datos --> int
+db.libros.updateMany(
+  {},
+  [
+    {
+      $set: {
+        "metadata_imp.Precio": {
+          $toInt: {
+            $trim: {
+              input: {
+                $replaceAll: {
+                  input: {
+                    $replaceAll: {
+                      input: "$metadata_imp.Precio",
+                      find: "COP $",
+                      replacement: ""
+                    }
+                  },
+                  find: ".",
+                  replacement: ""
+                }
+              }
+            }
+          }
+        },
+        "metadata_ebook.Precio": {
+          $toInt: {
+            $trim: {
+              input: {
+                $replaceAll: {
+                  input: {
+                    $replaceAll: {
+                      input: "$metadata_ebook.Precio",
+                      find: "COP $",
+                      replacement: ""
+                    }
+                  },
+                  find: ".",
+                  replacement: ""
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+)
+
+//limpeza de datos ---> int
+db.libros.updateMany(
+    {},
+    [
+      {
+        $set: {
+          "metadata_imp.SIIEL SKU": {
+            $toInt: {
+              $trim: {
+                input: {
+                  $replaceAll: {
+                    input: "$metadata_imp.SIIEL SKU",
+                    find: " ",
+                    replacement: ""
+                  }
+                }
+              }
+            }
+          },
+          "metadata_imp.ISBN-13": {
+            $toLong: {
+              $trim: {
+                input: {
+                  $replaceAll: {
+                    input: {
+                      $replaceAll: {
+                        input: "$metadata_imp.ISBN-13",
+                        find: "-",
+                        replacement: ""
+                      }
+                    },
+                    find: " ",
+                    replacement: ""
+                  }
+                }
+              }
+            }
+          },
+          "metadata_ebook.ISBN-13": {
+            $toLong: {
+              $trim: {
+                input: {
+                  $replaceAll: {
+                    input: {
+                      $replaceAll: {
+                        input: "$metadata_ebook.ISBN-13",
+                        find: "-",
+                        replacement: ""
+                      }
+                    },
+                    find: " ",
+                    replacement: ""
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  )
+

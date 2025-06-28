@@ -20,3 +20,30 @@ A futuro, se planea mejorar el buscador, añadir recomendaciones y desarrollar u
 - 🐳 Uso de Docker para bases de datos locales
 - 📈 Preparado para futuras mejoras: recomendaciones e interfaz web
 
+
+## ⚙️ Instalación
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/tu-usuario/tu-repo.git
+   cd tu-repo
+   ```
+
+2. **Crea un entorno virtual (opcional pero recomendado):**
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Instala las dependencias:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **(Opcional) Levanta MongoDB localmente con Docker:**
+   ```bash
+   docker-compose up -d
+   ```
+
+5. **Ejecuta el scraper o el buscador según lo necesites.**
+

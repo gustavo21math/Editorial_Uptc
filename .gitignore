@@ -5,3 +5,10 @@ datos_pre.json
 .vscode/
 insert.mongodb
 query.mongodb
+dump/
+.env
+## en proceso
+buscador.py
+docker-compose.yml
+dockerfile
+.cursor/
