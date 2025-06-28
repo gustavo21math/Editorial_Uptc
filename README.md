@@ -47,3 +47,55 @@ A futuro, se planea mejorar el buscador, añadir recomendaciones y desarrollar u
 
 5. **Ejecuta el scraper o el buscador según lo necesites.**
 
+## 🛠️ ¿Cómo lo creé?
+
+### Tecnologías principales utilizadas
+
+- 🐍 **Python 3**
+- 🍲 **BeautifulSoup** (web scraping)
+- 🍃 **PyMongo** (conexión con MongoDB)
+- 🔗 **LangChain** (procesamiento de lenguaje natural)
+- 🤖 **gpt-4o-mini** (modelo de IA para análisis y recomendaciones)
+- 🎛️ **Gradio** (prototipo de interfaz web)
+
+### Ejemplo de salida de un elemento en la base de datos
+
+```json
+{
+  "_id": {
+    "$oid": "683c39e1db7d83a3a59b5d84"
+  },
+  "title": "Transporte de fluidos bombas centrífugas",
+  "colaboradores": [
+    "Otto Caro Niño",
+    "Orlando Díaz Parra"
+  ],
+  "precio": [
+    30000,
+    40000
+  ],
+  "palabras_clave": [
+    "Fluido",
+    "Sistema de bombeo",
+    "Bomba centrífuga",
+    "Mecánica de fluidos",
+    "Transporte de fluidos",
+    "Operación y Mantenimiento"
+  ],
+  .
+  .
+  .
+}
+```
+
+## 📚 Recursos útiles
+
+- [Tutorial de MongoDB en W3Schools](https://www.w3schools.com/mongodb/index.php) – Guía práctica para aprender y consultar conceptos de MongoDB.
+- [Documentación oficial de Gradio](https://www.gradio.app) – Aprende a crear interfaces web rápidas para tus modelos de machine learning.
+- [LangChain Academy (GitHub)](https://github.com/langchain-ai/langchain-academy) – Recursos y ejemplos para aprender a usar LangChain en proyectos de IA.
+
+## 📝 Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT.  
+Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
