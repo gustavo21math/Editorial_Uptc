@@ -26,7 +26,7 @@ A futuro, se planea mejorar el buscador, añadir recomendaciones y desarrollar u
 1. **Clona el repositorio:**
    ```bash
    git clone https://github.com/gustavo21math/Editorial_Uptc.git
-   cd tu-repo
+   cd Editorial_Uptc
    ```
 
 2. **Crea un entorno virtual (opcional pero recomendado):**
