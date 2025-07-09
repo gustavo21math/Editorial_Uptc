@@ -25,7 +25,7 @@ A futuro, se planea mejorar el buscador, añadir recomendaciones y desarrollar u
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/tu-repo.git
+   git clone https://github.com/gustavo21math/Editorial_Uptc.git
    cd tu-repo
    ```
 
